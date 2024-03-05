@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | Euphoria-FT</title>
+    <title>Unity WebGL Player | BusinessCardWebAr</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
         html{
@@ -34,15 +34,12 @@
 </head>
 <body>
     <!--IMAGETARGETS-->
-		<imagetarget id='arcard' src='targets/AR_Card.jpg'></imagetarget>
-		<imagetarget id='bear' src='targets/bear.png'></imagetarget>
 		<imagetarget id='bfly' src='targets/bfly.png'></imagetarget>
+		<imagetarget id='flower' src='targets/flower.png'></imagetarget>
 		<imagetarget id='lady' src='targets/lady.png'></imagetarget>
 		<imagetarget id='reel' src='targets/reel.png'></imagetarget>
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
-		<imagetarget id='train' src='targets/train.png'></imagetarget>
-		<imagetarget id='lara' src='targets/laraCroft.jpeg'></imagetarget>
-		<imagetarget id='BMW' src='targets/BMW.jpg'></imagetarget>
+		<imagetarget id='bear' src='targets/bear.png'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
@@ -75,7 +72,7 @@
             document.getElementById("startCameraBtn").style.display = "block";
         });
     </script>
-    <script src="Build/BMW.loader.js"></script>
+    <script src="Build/Game.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -87,12 +84,12 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/BMW.data",
-                    frameworkUrl: "Build/BMW.framework.js",
-                    codeUrl: "Build/BMW.wasm",
+                    dataUrl: "Build/Game.data",
+                    frameworkUrl: "Build/Game.framework.js",
+                    codeUrl: "Build/Game.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "Euphoria-FT",
+                    productName: "BusinessCardWebAr",
                     productVersion: "0.1",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
